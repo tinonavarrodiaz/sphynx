@@ -3,13 +3,12 @@ import Separator from '../../components/Separator';
 import Born from './components/Born';
 import Family from './components/Family';
 import Leyend from './components/Leyend';
-import Video from './components/video';
+import Video1 from './components/Video1';
 
 const Home = () => {
   return (
     <section className="Home">
-      <Video img="/img/video.jpg" />
-      {/* <Banner img="/img/video.jpg" /> */}
+      <Video1 img="/img/video.jpg" />
       <Leyend />
       <Born />
       <Separator />
