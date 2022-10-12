@@ -4,8 +4,8 @@ import Video from './components/video';
 const Home = () => {
   return (
     <section className="Home">
-      <Video />
-      <Leyend />
+      {/* <Video /> */}
+      {/* <Leyend /> */}
     </section>
   );
 };
