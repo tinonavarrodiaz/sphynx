@@ -1,0 +1,32 @@
+{
+  "name": "sphynx1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^1.1.2",
+    "hamburgers": "^1.2.1",
+    "react": "^18.2.0",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "nh-grid": "^3.0.5",
+    "postcss": "^8.4.17",
+    "sass": "^1.55.0",
+    "vite": "^3.1.7",
+    "vite-plugin-qrcode": "^0.2.0",
+    "vite-plugin-remove-console": "^1.1.0",
+    "vite-plugin-static-copy": "^0.9.0"
+  }
+}

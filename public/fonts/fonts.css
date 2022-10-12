@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Bilo';
+    src: url('Bilo-Regular.woff2') format('woff2'),
+        url('Bilo-Regular.woff') format('woff'),
+        url('Bilo-Regular.svg#Bilo-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
