@@ -20,6 +20,5 @@ export default defineConfig({
       ],
     }),
   ],
-  site: 'https://github.com/tinonavarrodiaz/sphynx',
   base: '/sphynx/',
 });
