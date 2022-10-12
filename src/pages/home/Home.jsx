@@ -1,5 +1,5 @@
-import Leyend from './components/Leyend';
-import Video from './components/video';
+// import Leyend from './components/Leyend';
+// import Video from './components/video';
 
 const Home = () => {
   return (
