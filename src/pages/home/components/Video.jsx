@@ -1,9 +1,7 @@
-import videoimg from '/img/video.jpg';
-
-const Video = () => {
+const Video = ({ img }) => {
   return (
     <div className="video-container">
-      <img src={videoimg} alt="video" />
+      <img src={img} alt="video" />
     </div>
   );
 };
