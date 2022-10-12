@@ -20,5 +20,5 @@ export default defineConfig({
       ],
     }),
   ],
-  base: '/sphynx/',
+  // base: '/sphynx/',
 });
