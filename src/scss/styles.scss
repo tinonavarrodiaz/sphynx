@@ -49,6 +49,15 @@ $legacy : true; // Soporte para versiones antiguas
 @import "components/header";
 @import "components/footer";
 
+
+// Pages
+
+@import "pages/home";
+@import "pages/story";
+@import "pages/tequilas";
+@import "pages/buy";
+@import "pages/contact";
+
 // Theme (colors and fonts)
 @import "theme/typography";
 

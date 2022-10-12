@@ -7,14 +7,14 @@ import Video1 from './components/Video1';
 
 const Home = () => {
   return (
-    <section className="Home">
+    <div className="Home">
       <Video1 img="/img/video.jpg" />
       <Leyend />
       <Born />
       <Separator />
       <Family />
       <Banner img="/img/landscape1.jpg" />
-    </section>
+    </div>
   );
 };
 

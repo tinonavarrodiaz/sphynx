@@ -12,7 +12,7 @@
   @include from(lg){
     padding: 0 get-vw(66px);
     padding-top: get-vh(83px);
-    padding-bottom: get-vh(20px);
+    padding-bottom: get-vh(25px);
   }
   &__container{
     text-align: center;
