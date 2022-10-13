@@ -20,8 +20,11 @@ section{
   height: 150px;
   position: relative;
   width: 80%;
-    max-width: get-vw(1678px);
-    margin: 0 auto;
+  margin: 0 auto;
+  @include from(lg){
+    width: get-vw(1478px);
+
+  }
   &::before, &::after{
     content: '';
     display: block;

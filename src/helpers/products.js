@@ -24,7 +24,7 @@ const porducts = [
       'Silky texture and fresh to the palate, withprolonged ending and a sweet touch.',
   },
   {
-    name: 'Extra Añejo Black Oak',
+    name: 'Añejo Black Oak',
     img: '/anejoE.png',
     color: 'Dark Amber, Mahogany.',
     aroma: 'Oak, Caramel, Vanilla, Cooked Agave.',

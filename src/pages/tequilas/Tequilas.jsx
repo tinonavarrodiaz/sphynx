@@ -1,7 +1,13 @@
+import Separator from '../../components/Separator';
+import Buttons from './components/Buttons';
+import Products from './components/Products';
+
 const Tequilas = () => {
   return (
     <section className="Tequilas">
-      <h1>Tequilas</h1>
+      <Products />
+      <Separator />
+      <Buttons />
     </section>
   );
 };

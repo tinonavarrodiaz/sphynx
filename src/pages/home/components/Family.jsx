@@ -24,11 +24,11 @@ export default function Family() {
         <div className="row Family__products">
           {products.map((prod) => (
             <figure className="product-figure" key={prod.name}>
-              <img src={`img/${prod.img}`} alt={prod.name} />
+              <img src={`img${prod.img}`} alt={prod.name} />
               <figcaption
-                className={prod.name === 'Extra Añejo Black Oak' ? 'dl' : ''}
+                className={prod.name === 'Añejo Black Oak' ? 'dl' : ''}
               >
-                {prod.name}
+                {prod.name === 'Añejo Black Oak' ? 'Extra' : ''} {prod.name}
                 <span>&nbsp;- 70cl</span>
               </figcaption>
             </figure>
