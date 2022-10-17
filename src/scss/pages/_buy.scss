@@ -1,7 +1,7 @@
 .Buy{
   width: 80%;
   margin: 0 auto;
-  padding-top: 2em;
+  padding-top: 4em;
   @include from(lg){
     padding-top: get-vh(95px);
     width: get-vw(1678px);
@@ -15,6 +15,10 @@
     // text-align: center;
     &__grid{
       align-items: center;
+      @include from(lg){
+        padding-top: get-vw(20px);;
+        // margin-top: get-vw(354px);
+      }
     }
     h2{
       text-align: center;
@@ -36,9 +40,21 @@
     }
     &__text{
       padding-left: get-vw(150px);
+      p{
+        margin-bottom: 1em;
+        @include from(lg){
+          margin-bottom: get-vw(50px) ;
+          padding-right: get-vw(100px);
+        }
+        &::last-child{
+          margin-bottom: 0;
+        }
+      }
       @include from(lg){
         h2{
           font-size: get-vw(70px);
+          padding-right: 30%;
+          margin-bottom: get-vw(60px);
         }
         p{
           font-size: get-vw(40px);
@@ -46,5 +62,10 @@
         }
       }
     }
+  }
+}
+.Buy + .Banner{
+  @include from(lg){
+    margin-top: get-vw(250px);
   }
 }

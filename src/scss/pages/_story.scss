@@ -1,10 +1,13 @@
 .Story{
   width: 90%;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 4em 0;
+  @include from(lg){
+    padding: get-vh(174px) 0;
+  }
   &__text {
     @include from(lg){
-      padding-right: 1em;
+      padding-left: get-vw(163px);
     }
   }
   h2{
@@ -25,17 +28,18 @@
     text-align: center;
     font-size: 1.2em;
     line-height: 1.2;
-    &:last-child{
-      margin-bottom: 0;
-    }
     @include from(lg){
       text-align: left;
       font-size: get-vw(40px);
-      line-height: 1.2;
+      line-height: get-vw(41px);
+      margin-bottom: get-vh(60px);
+    }
+    &:last-child{
+      margin-bottom: 0;
     }
   }
   @include from(l) {
-    width: get-vw(1582px);
+    width: get-vw(1610px);
     padding-bottom: 0 get-vh(174px);
     img {
       width: 100%;
@@ -47,7 +51,8 @@
     }
   }
   &__grid{
-    grid-column-gap: get-vw(163px);
+    // grid-column-gap: get-vw(163px);
+    grid-template-columns: 52% 1fr;
     align-items: center;
     p{
       margin-bottom: .8em !important;
@@ -58,9 +63,15 @@
     @include from (lg){
       margin-bottom: get-vh(79px) ;
     }
+    img{
+      // transform-origin: center top;
+      // transform: scale(1.005);
+    }
   }
   .text-center{
     text-align: center;
+    font-style: italic;
+
     padding: 0 1em;
   }
 

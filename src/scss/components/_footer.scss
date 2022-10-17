@@ -1,56 +1,78 @@
 .main-footer{
   background-color: #fff;
   height: var(--footer-height);
+  text-align: center;
   padding-top: 1.5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-bottom: 1.5em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: auto;
   @include from(lg){
-    padding: 0 get-vw(66px);
-    padding-top: get-vh(60px);
-    padding-bottom: get-vh(25px);
+    padding-top: get-vw(80px);
   }
+
   &__container{
-    text-align: center;
+    font-size: .9em;
+    line-height: 1;
+    @include from(lg){
+      font-size: get-vh(24px);
+    }
     img{
       width: 30%;
-      margin: 0 auto;
-      margin-bottom: .5em;
+      margin: 0 auto 1em;
+
       @include from(lg){
+        margin: 0 auto get-vw(24px);
         width: get-vw(165px);
-        margin-bottom: get-vh(25px);
-      }
-    }
-    p{
-      font-size: 14px;
-      @include from(lg){
-        font-size: get-vw(22px);
       }
     }
   }
   &__menu-container{
     display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    align-items: center;
-    padding-left: 45px;
-    padding-right: 2em;
-    li{
-      line-height: 1.3;
-      height: auto;
-      text-align: center;
+    margin-top: auto;
+    flex-direction: column;
+    font-size: .9em;
+    @include from(lg){
+      flex-direction: initial;
+      justify-content: space-between;
     }
     ul{
+      display: flex;
+      justify-content: center;
+      margin-bottom: .8em;
+      padding-left: 2em;
       @include from(lg){
-        display: flex;
+        padding-left: get-vw(100px);
+        padding-right: get-vw(100px);
+
         font-size: get-vw(20px);
-        li{
-          text-align: left;
-          margin-left: get-vw(50px);
+      }
+      li{
+        margin-right: 1em;
+      }
+      &:last-child{
+        margin-bottom: 0;
+        a{
+          text-align: center;
+          display: block;
+        }
+        li:last-child{
+          margin-right: 0;
+        }
+      }
+      &:first-child{
+        a{
+          position: relative;
+          // background-color: lime;
+          &::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+          }
         }
       }
     }

@@ -14,9 +14,15 @@ function Products() {
             <h2 className="PTequilas-poducts__name">
               SPHYNX Tequila® {product.name}
             </h2>
-            <p>Color: {product.color}</p>
-            <p>Aroma: {product.aroma}</p>
-            <p>Taste: {product.taste}</p>
+            <p>
+              <span>Color: </span> {product.color}
+            </p>
+            <p>
+              <span>Aroma: </span> {product.aroma}
+            </p>
+            <p>
+              <span>Taste: </span> {product.taste}
+            </p>
           </div>
           <div
             className="Tequilas-products__img"
@@ -27,6 +33,11 @@ function Products() {
           </div>
         </div>
       ))}
+      <div className="link-ext">
+        <a href="#" onClick={(e) => e.preventDefault()}>
+          Click here to view detailed information in our catalog/book.
+        </a>
+      </div>
     </div>
   );
 }

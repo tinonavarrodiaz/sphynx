@@ -1,4 +1,17 @@
 h2{
-  font-weight: lighter;
+  font-weight: normal;
+  line-height: .8  !important;
+  @include from(lg) {
+    font-size: get-vw(68px) !important;
+    line-height: .8 !important;
+  }
+}
 
+
+p{
+  line-height: 1.025 !important;
+  font-size: 20px;
+  @include from(lg){
+    font-size: get-vw(35px) !important;
+  }
 }

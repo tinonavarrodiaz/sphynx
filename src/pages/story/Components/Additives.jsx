@@ -1,6 +1,6 @@
 export default function Additives() {
   return (
-    <section className="Story">
+    <>
       <div className="Story__grid grid grid-col-2">
         <div className="Story__item" data-aos="fade-right">
           <img src="/img/about.jpg" alt="Sphynx Story" />
@@ -75,6 +75,6 @@ export default function Additives() {
         “We don’t create hangovers, we create experiences and we want you to
         savour every single drop.”
       </p>
-    </section>
+    </>
   );
 }

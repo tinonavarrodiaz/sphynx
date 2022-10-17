@@ -6,16 +6,16 @@
 
 
 // Font families
-$heading-font : 'Bilo',
+$heading-font : 'work_sansregular',
 sans-serif;
-$body-font : 'Bilo',
+$body-font : 'work_sansregular',
 sans-serif;
 
 // CSS variables for typography
 :root {
   // Font families
-  --heading-font: 'Bilo', sans-serif;
-  --body-font: 'Bilo', sans-serif;
+  --heading-font: 'work_sansregular', sans-serif;
+  --body-font: 'work_sansregular', sans-serif;
 
   // Font sizes
   --bigger-font-size : #{rem(32px)};

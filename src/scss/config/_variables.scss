@@ -13,11 +13,11 @@ $width100: calc(100vw - var(--scrollbar));
 
 :root {
   --header-height: 70px;
-  --footer-height: 150px;
+  --footer-height: 175px;
 
   @include from(l) {
     --header-height: #{get-vh(171px)};
-    --footer-height: #{get-vh(230px)};
+    --footer-height: #{get-vh(271px)};
   }
 }
 

@@ -6,18 +6,18 @@ const Footer = () => {
     <footer className="main-footer">
       <div className="main-footer__container">
         <img src={logo} alt="" />
-        <p>The perfect way to enjoy SPHYNX Tequila® is responsibly</p>
+        The perfect way to enjoy SPHYNX Tequila® is responsibly
       </div>
       <div className="main-footer__menu-container">
         <ul className="policy-menu">
           <li className="policy-menu__item">
             <NavLink className={'policy-menu__link'} to={'/privacy-policy'}>
-              Privacy Policiy
+              Privacy Policy
             </NavLink>
           </li>
           <li className="policy-menu__item">
             <NavLink className={'policy-menu__link'} to={'/cookie-policy'}>
-              Cookie Policiy
+              Cookie Policy
             </NavLink>
           </li>
         </ul>
