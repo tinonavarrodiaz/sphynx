@@ -4,8 +4,8 @@ function Way() {
   return (
     <div className="Way">
       <div className="Way__grid grid grid-col-2">
-        <img src="/img/buy1.jpg" alt="Sphynx Bottle" />
-        <div className="Way__text">
+        <img src="/img/buy1.jpg" alt="Sphynx Bottle" data-aos="fade-right" />
+        <div className="Way__text" data-aos="fade-left">
           <h2>The authentic way</h2>
           <p>
             For generations Tequila has been sipped and enjoyed neat or over

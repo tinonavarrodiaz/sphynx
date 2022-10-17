@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import AOS from 'aos';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Accessibility from './components/accessibility/Accessibility';
 import Footer from './components/Footer';
@@ -10,7 +11,17 @@ import Story from './pages/story/Story';
 import Tequilas from './pages/tequilas/Tequilas';
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
+  useEffect(() => {
+    AOS.init({
+      startEvent: 'load',
+      easing: 'ease-out-back',
+      duration: 850,
+      // startEvent: 'DOMContentLoaded',
+      useClassNames: true,
+      // once: true,
+    });
+  }, []);
 
   return (
     <BrowserRouter>

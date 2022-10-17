@@ -11,7 +11,7 @@
   margin-top: auto;
   @include from(lg){
     padding: 0 get-vw(66px);
-    padding-top: get-vh(83px);
+    padding-top: get-vh(60px);
     padding-bottom: get-vh(25px);
   }
   &__container{

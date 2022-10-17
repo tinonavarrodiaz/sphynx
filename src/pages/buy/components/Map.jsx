@@ -12,7 +12,7 @@ function Map() {
     })();
   }, []);
   return (
-    <div className="Map" id={'where-to-buy'}>
+    <div className="Map" id={'where-to-buy'} style={{ minHeight: '40vh' }}>
       <div id="storepoint-container" data-map-id="162223c3f8333d"></div>
     </div>
   );

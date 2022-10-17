@@ -84,3 +84,22 @@ ul {
   display: flex;
   flex-direction: column;
 }
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+  resize: none;
+
+  &:focus,
+  &:active,
+  &::selection {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+::placeholder {
+  color: inherit;
+}

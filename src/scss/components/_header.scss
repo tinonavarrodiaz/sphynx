@@ -19,15 +19,20 @@
 }
 .main-menu{
   position: absolute;
+  z-index: 500;
   top: var(--header-height);
   left: 0;
   padding-left: 1em;
+  padding-right: 1em;
   background: #fff;
   width: 100%;
   text-transform: uppercase;
   overflow: hidden;
   max-height: 0;
   transition: max-height .3s linear;
+  a{
+    display: block;
+  }
   // transition: all ;
   &.is-active{
     max-height: 15em;
@@ -40,6 +45,7 @@
     overflow: unset;
     max-height: unset;
     display: flex;
+    padding: 0;
     li{
       font-size: 20px;
     }
