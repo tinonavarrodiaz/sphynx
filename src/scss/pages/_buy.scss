@@ -8,7 +8,8 @@
   }
   > .Separator{
     @include from(lg){
-      height: get-vh(326px);
+      height: get-vh(276px);//326px
+      // padding-bottom: 30%;
     }
   }
   .Way{
@@ -16,7 +17,7 @@
     &__grid{
       align-items: center;
       @include from(lg){
-        padding-top: get-vw(20px);;
+        padding-top: get-vw(60px);;
         // margin-top: get-vw(354px);
       }
     }
