@@ -33,8 +33,7 @@ export default function Family() {
               <figcaption
                 className={prod.name === 'Añejo Black Oak' ? 'dl' : ''}
               >
-                {prod.name === 'Añejo Black Oak' ? 'Extra' : ''} {prod.name}
-                <span>&nbsp;- 70cl</span>
+                {prod.nameAlt}
               </figcaption>
             </figure>
           ))}
