@@ -4,13 +4,13 @@ const Born = () => {
   return (
     <section className="Born">
       <div className="Born__container grid grid-col-2">
-        <div className="row Born__text">
+        <div className="row Born__text" data-aos="fade-right">
           <h2>Born from an unorthodox love story,</h2>
           <p>
             that later transformed into a true masterpiece from the inside out.
           </p>
         </div>
-        <div className="row">
+        <div className="row" data-aos="fade-left">
           <img src={blottle} alt="Born" />
         </div>
       </div>

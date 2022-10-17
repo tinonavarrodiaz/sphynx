@@ -4,7 +4,7 @@ export default function Family() {
   return (
     <section className="Family">
       <div className="Family__container grid grid-col-2">
-        <div className="row Family__text">
+        <div className="row Family__text" data-aos="fade-right">
           <h2>The Family</h2>
           <p>
             Welcome to the SPHYNX Tequila family. A premium collection of
@@ -22,8 +22,13 @@ export default function Family() {
           </p>
         </div>
         <div className="row Family__products">
-          {products.map((prod) => (
-            <figure className="product-figure" key={prod.name}>
+          {products.map((prod, i) => (
+            <figure
+              className="product-figure"
+              key={i}
+              data-aos="zoom-in"
+              data-aos-delay={i * 100}
+            >
               <img src={`img${prod.img}`} alt={prod.name} />
               <figcaption
                 className={prod.name === 'Añejo Black Oak' ? 'dl' : ''}

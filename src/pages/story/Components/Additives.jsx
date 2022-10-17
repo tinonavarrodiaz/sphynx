@@ -2,10 +2,10 @@ export default function Additives() {
   return (
     <section className="Story">
       <div className="Story__grid grid grid-col-2">
-        <div className="Story__item">
+        <div className="Story__item" data-aos="fade-right">
           <img src="/img/about.jpg" alt="Sphynx Story" />
         </div>
-        <div className="Story__item Story__text">
+        <div className="Story__item Story__text" data-aos="fade-left">
           <h2>0% Additives. 100% SPHYNX Tequila®</h2>
           <p>
             We are Yorkshire’s premium Tequila connoisseurs with a passion for
@@ -15,7 +15,7 @@ export default function Additives() {
           </p>
         </div>
       </div>
-      <p>
+      <p data-aos="zoom-in">
         We wanted to take you back to the authentic ways of enjoying Tequila,
         this required a decade of travelling to Mexico, tasting and
         understanding the complex and unique ways of creating a tequila so
@@ -24,13 +24,13 @@ export default function Additives() {
         be raising the bar.
       </p>
 
-      <p>
+      <p data-aos="zoom-in">
         Handcrafted artisan Tequila, created from classic and modern distilling
         methods, we deliver to you the smoothest, cleanest Tequila range. A
         balance of power and perfection, with the added magic of a Sphynx.
       </p>
 
-      <p className="text-center">
+      <p className="text-center" data-aos="zoom-in">
         “We finished late one evening, tasting our custom made tequila profiles
         for our range, knowing full well that we had a very early morning to
         follow. When we woke up the next day at 5am bright eyed and bushy
@@ -38,7 +38,7 @@ export default function Additives() {
         but our tequila too.” - Founders of SPHYNX Tequila®.
       </p>
 
-      <p>
+      <p data-aos="zoom-in">
         Our distillery is truly the Queen Distiller of Jalisco, a family with
         several generations of expertise and acres of their own blue agave
         fields. They batch produce for SPHYNX Tequila® and truly understand that
@@ -46,7 +46,7 @@ export default function Additives() {
         you that you will never drink tequila with salt and lime again.
       </p>
 
-      <p>
+      <p data-aos="zoom-in">
         We have taken the finest agave, grown for a minimum age of seven years
         and put it through traditional methods. We chose to age our tequila in
         various French oak barrels that allowed us to create custom profiles
@@ -54,7 +54,7 @@ export default function Additives() {
         you to pour it over ice, sip and enjoy.
       </p>
 
-      <p>
+      <p data-aos="zoom-in">
         It was important that our finest tequila profiles reached you in our
         Iconic SPHYNX® decanter, which has taken nearly half a decade to
         achieve. We have worked with some of the most talented craftsmen & women
@@ -64,14 +64,14 @@ export default function Additives() {
         a talking point for any soirée.
       </p>
 
-      <p>
+      <p data-aos="zoom-in">
         SPHYNX Tequila®, born out of an unorthodox love story. Just like the
         Sphynx cat, our tequila represents extroverted behaviour, a high level
         of energy, intelligence, curiosity and affection for life itself. We
         look forward to you creating magical memories with SPHYNX Tequila®.{' '}
       </p>
 
-      <p className="text-center">
+      <p className="text-center" data-aos="zoom-in">
         “We don’t create hangovers, we create experiences and we want you to
         savour every single drop.”
       </p>
