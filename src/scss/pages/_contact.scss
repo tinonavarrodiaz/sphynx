@@ -39,18 +39,25 @@
       // background-color: #666;
     }
     h2{
-      font-size: 30px ;
+      font-size: 25px ;
       @include from(lg){
         font-size: get-vh(70px);
         margin-bottom: get-vh(50px);
       }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        font-size: 1.5em;
+      }
     }
     p{
-      font-size: 22px;
+      font-size: 20px;
       @include from(lg){
         font-size: get-vh(40px);
         padding-right: 22vh;
         line-height: 1.1;
+      }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        font-size: 1em;
+        padding: 0 1em;
       }
     }
   }
@@ -66,6 +73,11 @@
       padding: 0;
       box-shadow: none;
       // padding: 0 get-vw(96px);
+    }
+    @media screen and (max-width: 678px) and (orientation: landscape) {
+      width: 60vw;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -108,6 +120,9 @@
         font-size: get-vh(25px);
         // line-height: get-vh(62px);
       }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        font-size: .9em;
+      }
     }
     textarea{
       height: 25vh;
@@ -133,6 +148,9 @@
     @include from(lg){
       line-height: get-vh(88px);
       font-size: get-vw(25px);
+    }
+    @media screen and (max-width: 678px) and (orientation: landscape) {
+      font-size: .9em;
     }
   }
 }

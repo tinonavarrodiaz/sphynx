@@ -12,9 +12,13 @@
   height: 180px;
   p{
     margin-top: 1em;
-    line-height: 1.2;
+    line-height: 1;
+    padding: 0 1em;
     @include from(lg){
       margin-top: get-vh(75px);
+    }
+    @include to(400px) {
+      font-size: 1em;
     }
   }
   img{
@@ -49,6 +53,11 @@
       height: get-vh(745px);
 
     }
+    @media screen and (max-width: 678px) and (orientation: landscape) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
   }
   &__text{
     display: flex;
@@ -70,17 +79,36 @@
     }
     h2{
       font-size: 30px;
-      line-height: 1.2 !important;
       margin-bottom: 10%;
+      // font-family: 'work_sansmedium';
       @include from(lg){
-        font-size: get-vw(70px);
+        font-size: get-vw(65px);
       }
+      @include to(400px) {
+        font-size: 1.5em;
+      }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        font-size: 1.5em;
+      }
+      @media screen and (max-width: 570px) and (orientation: landscape) {
+        font-size: 1.3em;
+      }
+      // @include from(1600px){
+      //   font-size: 1em !important;
+      //   background: red;
+      // }
     }
     p{
       font-size: 25px;
-      line-height: 1.2 !important;
+      // line-height: 1.2 !important;
       @include from(lg){
-        font-size: get-vw(40px);
+        font-size: get-vw(35px);
+      }
+      @include to(400px){
+        font-size: 1em;
+      }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        font-size: 1em;
       }
     }
   }
@@ -107,17 +135,21 @@
       padding-bottom: unset;
     }
     h2 {
-      font-size: 30px;
+      font-size: 1.5em;
       line-height: 1.2 !important;
       margin-bottom: 10%;
 
       @include from(lg) {
         font-size: get-vw(70px);
       }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+      }
     }
     p {
-      font-size: 20px;
-      line-height: 1.2 !important;
+      font-size: 1em;
+      // line-height: 1.2 !important;
       margin-bottom: .5em;
       &:last-child{
         margin-bottom: 0;
@@ -125,6 +157,9 @@
 
       @include from(lg) {
         font-size: get-vw(40px);
+      }
+      @include to(400px) {
+        font-size: 1.1em;
       }
     }
     @include from(lg){
@@ -140,6 +175,9 @@
       grid-row-gap: get-vh(70px);
       grid-column-gap: get-vh(50px);
     }
+    @media screen and (max-width: 678px) and (orientation: landscape) {
+      grid-template-columns: repeat(4, 1fr);
+    }
     figcaption{
       padding: .5em;
       line-height: 1.2;
@@ -151,6 +189,16 @@
         padding-left: 1em;
         padding-right: 1em;
       }
+      @include to(400px){
+        font-size: .8em;
+      }
+      @include to(340px){
+        font-size: .7em;
+      }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        font-size: .7em;
+      }
+
     }
     .dl{
       display: grid;

@@ -20,6 +20,11 @@
         padding-top: get-vw(60px);;
         // margin-top: get-vw(354px);
       }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        display: grid;
+        grid-template-columns: 30vw 1fr;
+        // align-items: center;
+      }
     }
     h2{
       text-align: center;
@@ -38,6 +43,9 @@
       @include from(lg){
         margin-bottom: 0;
       }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        margin: 0;
+      }
     }
     &__text{
       padding-left: get-vw(150px);
@@ -54,12 +62,26 @@
       @include from(lg){
         h2{
           font-size: get-vw(70px);
-          padding-right: 30%;
+          padding-right: 25%;
           margin-bottom: get-vw(60px);
         }
         p{
           font-size: get-vw(40px);
           line-height: 1.1;
+        }
+      }
+      @include to(400px){
+        h2{
+          font-size: 1.3em;
+        }
+        p{
+          font-size: 1em;
+          text-align: center;
+        }
+      }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        p{
+          font-size: 1em;
         }
       }
     }

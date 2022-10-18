@@ -1,17 +1,20 @@
 h2{
-  font-weight: normal;
-  line-height: .8  !important;
+  font-family: 'work_sansmedium';
+  line-height: 1  ;
   @include from(lg) {
-    font-size: get-vw(68px) !important;
-    line-height: .8 !important;
+    font-size: get-vw(150px) t;
+    line-height: .9 ;
+    letter-spacing: 2px;
   }
 }
 
 
 p{
-  line-height: 1.025 !important;
+  line-height: 1.025;
   font-size: 20px;
   @include from(lg){
     font-size: get-vw(35px) !important;
+    line-height: 1.1 !important;
+    letter-spacing: 1px;
   }
 }

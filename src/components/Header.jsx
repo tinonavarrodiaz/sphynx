@@ -11,7 +11,9 @@ const Header = () => {
   };
   return (
     <header className="main-header">
-      <img src={logo} alt="Logotipo" className="main-logo" />
+      <NavLink to={'/'} className="main-logo">
+        <img src={logo} alt="Logotipo" />
+      </NavLink>
       <nav className="main-nav">
         <Hamburger active={active} action={ToggleMenuFunction} />
         <ul className={`main-menu ${active ? 'is-active' : ''}`}>

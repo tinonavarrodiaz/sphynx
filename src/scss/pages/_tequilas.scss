@@ -25,6 +25,14 @@
     }
     img{
       width: 100%;
+      @include to(400px) {
+        width: 60%;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 678px) and (orientation: landscape) {
+        width: 40%;
+        margin: 0 auto;
+      }
     }
     &__data{
       margin-bottom: 1em;
@@ -47,6 +55,9 @@
       @include from(2xl){
         padding-right: get-vw(200px);
       }
+      @include to(400px) {
+        font-size: 1.1em;
+      }
     }
     p{
       line-height: 1.1 !important;
@@ -56,6 +67,9 @@
       @include from(lg){
         padding-right: get-vw(300px);
         font-size: get-vw(30px);
+      }
+      @include to(400px) {
+        font-size: .9em;
       }
     }
   }
@@ -69,6 +83,10 @@
     img{
       width: 100%;
     }
+  }
+  @media screen and (max-width: 678px) and (orientation: landscape) {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
   a{
     display: block;
@@ -93,6 +111,11 @@
         margin-left: 1em;
         line-height: 2em;
         margin-top: get-vw(30px);
+      }
+    }
+    @media screen and (max-width: 678px) and (orientation: landscape) {
+      p{
+        font-size: .9em;
       }
     }
   }

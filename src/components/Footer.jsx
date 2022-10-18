@@ -10,15 +10,32 @@ const Footer = () => {
       </div>
       <div className="main-footer__menu-container">
         <ul className="policy-menu">
-          <li className="policy-menu__item">
+          {/* <li className="policy-menu__item">
             <NavLink className={'policy-menu__link'} to={'/privacy-policy'}>
               Privacy Policy
             </NavLink>
+          </li> */}
+          <li className="policy-menu__item">
+            <a
+              className={'policy-menu__link'}
+              target="_blank"
+              href={
+                'https://www.ueni.com/en-gb/privacy?_ga=2.236453377.1850822409.1666112312-1947257052.1665520950'
+              }
+            >
+              Privacy Policy
+            </a>
           </li>
           <li className="policy-menu__item">
-            <NavLink className={'policy-menu__link'} to={'/cookie-policy'}>
+            <a
+              className={'policy-menu__link'}
+              target="_blank"
+              href={
+                'https://www.ueni.com/en-gb/privacy?_ga=2.236453377.1850822409.1666112312-1947257052.1665520950'
+              }
+            >
               Cookie Policy
-            </NavLink>
+            </a>
           </li>
         </ul>
         <ul className="social-menu">

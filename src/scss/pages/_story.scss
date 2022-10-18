@@ -18,6 +18,9 @@
       line-height: 1;
       margin-bottom: 2rem;
     }
+    @include to(400px) {
+      font-size: 1.5em;
+    }
   }
   img{
     margin-bottom: 2em;
@@ -36,6 +39,9 @@
     }
     &:last-child{
       margin-bottom: 0;
+    }
+    @include to(400px) {
+      font-size: 1em;
     }
   }
   @include from(l) {

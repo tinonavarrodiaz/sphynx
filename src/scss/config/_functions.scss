@@ -4,11 +4,15 @@
   $vw-context: (1920*.01) * 1px;
   @return math.div($target, $vw-context) * 1vw;
 }
-
 @function get-vh($target) {
-  $vh-context: (929*.01) * 1px;
-  @return math.div($target, $vh-context) * 1vh;
+  $vw-context: (1920*.01) * 1px;
+  @return math.div($target, $vw-context) * 1vw;
 }
+
+// @function get-vh($target) {
+//   $vh-context: (929*.01) * 1px;
+//   @return math.div($target, $vh-context) * 1vh;
+// }
 
 %list-style {
   list-style: none;

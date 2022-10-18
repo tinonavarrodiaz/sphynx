@@ -13,6 +13,9 @@
   &__container{
     font-size: .9em;
     line-height: 1;
+    letter-spacing: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
     @include from(lg){
       font-size: get-vh(24px);
     }
@@ -31,6 +34,7 @@
     margin-top: auto;
     flex-direction: column;
     font-size: .9em;
+    letter-spacing: 1px;
     @include from(lg){
       flex-direction: initial;
       justify-content: space-between;
