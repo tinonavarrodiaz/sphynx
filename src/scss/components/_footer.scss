@@ -8,14 +8,16 @@
   flex-direction: column;
   @include from(lg){
     padding-top: get-vw(80px);
+    padding-right: get-vw(50px);
+    padding-left: get-vw(50px);
   }
 
   &__container{
-    font-size: .9em;
+    font-size: .7em;
     line-height: 1;
     letter-spacing: 1px;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     @include from(lg){
       font-size: get-vh(20px);
     }
@@ -36,17 +38,22 @@
     display: flex;
     margin-top: auto;
     flex-direction: column;
-    font-size: .9em;
+    font-size: .7em;
     letter-spacing: 1px;
     @include from(lg){
       flex-direction: initial;
       justify-content: space-between;
     }
+
     ul{
       display: flex;
       justify-content: center;
       margin-bottom: .8em;
       padding-left: 2em;
+      margin-bottom: 2em;
+      &:last-child {
+          margin-bottom: 0;
+        }
       @include from(lg){
         padding-left: get-vw(100px);
         padding-right: get-vw(100px);
@@ -54,7 +61,7 @@
         font-size: get-vw(20px);
       }
       li{
-        margin-right: 1em;
+        margin-right: 2em;
       }
       &:last-child{
         margin-bottom: 0;
