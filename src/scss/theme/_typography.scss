@@ -6,16 +6,16 @@
 
 
 // Font families
-$heading-font : 'work_sansregular',
+$heading-font : 'abhaya_libresemibold',
 sans-serif;
-$body-font : 'work_sansregular',
+$body-font : 'work_sanslight',
 sans-serif;
 
 // CSS variables for typography
 :root {
   // Font families
-  --heading-font: 'work_sansregular', sans-serif;
-  --body-font: 'work_sansregular', sans-serif;
+  --heading-font: 'abhaya_libresemibold', sans-serif;
+  --body-font: 'work_sanslight', sans-serif;
 
   // Font sizes
   --bigger-font-size : #{rem(32px)};

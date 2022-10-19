@@ -31,10 +31,13 @@
   overflow: hidden;
   max-height: 0;
   transition: max-height .3s linear;
+  font-family: 'work_sanslight';
   a{
-    font-family: 'work_sansmedium';
+    // font-family: 'work_sansmedium';
+    letter-spacing: 3px !important;
     display: block;
     line-height: 3em;
+    font-weight: 700;
   }
   // transition: all ;
   &.is-active{

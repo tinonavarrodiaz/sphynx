@@ -10,11 +10,11 @@ function Buttons() {
         data-aos="fade-right"
       >
         <img src="/img/tequilas2.jpg" alt="Botella Sphynx" />
-        <p>Find a location to get SPHYNX®</p>
+        <p className="text-btn">Find a location to get SPHYNX®</p>
       </NavLink>
       <NavLink to="/contact" className={'Buttons__btn'} data-aos="fade-left">
         <img src="/img/tequilas1.jpg" alt="Botella Sphynx" />
-        <p>Get in touch with us</p>
+        <p className="text-btn">Get in touch with us</p>
       </NavLink>
     </section>
   );

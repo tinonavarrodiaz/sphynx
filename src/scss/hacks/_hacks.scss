@@ -1,5 +1,4 @@
 h2{
-  font-family: 'work_sansmedium';
   line-height: 1  ;
   @include from(lg) {
     font-size: get-vw(150px) t;
@@ -12,9 +11,19 @@ h2{
 p{
   line-height: 1.025;
   font-size: 20px;
+  letter-spacing: 2px !important;
+  margin-bottom: 1em !important;
   @include from(lg){
-    font-size: get-vw(35px) !important;
+    font-size: get-vw(30px) !important;
     line-height: 1.1 !important;
     letter-spacing: 1px;
+    margin-bottom: 1.3em !important;
   }
+  &::last-child{
+    margin-bottom: 0 !important;
+  }
+}
+
+figcaption{
+
 }

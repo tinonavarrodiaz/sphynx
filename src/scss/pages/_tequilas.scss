@@ -48,8 +48,8 @@
       font-weight: bold !important;
       @include from(lg){
         text-align: left;
-        font-size: get-vw(60px);
-        padding-right: get-vw(150px);
+        font-size: get-vw(50px);
+        padding-right: get-vw(250px) !important;
         margin-bottom: get-vw(42px);
       }
       @include from(2xl){
@@ -65,8 +65,9 @@
         font-weight: bold;
       }
       @include from(lg){
-        padding-right: get-vw(300px);
+        padding-right: get-vw(200px);
         font-size: get-vw(30px);
+        line-height: 1.2 !important;
       }
       @include to(400px) {
         font-size: .9em;
@@ -105,12 +106,14 @@
     @include from(lg){
       margin-bottom: 0;
       text-align: left;
-      font-size: get-vw(30px);
 
       p{
+        font-size: get-vw(25px) !important;
         margin-left: 1em;
         line-height: 2em;
         margin-top: get-vw(30px);
+        font-family: 'work_sansmedium';
+        letter-spacing: 1px !important;
       }
     }
     @media screen and (max-width: 678px) and (orientation: landscape) {
@@ -134,5 +137,20 @@
     text-align-last: right;
     padding-right: get-vw(153px);
     font-size: get-vw(28px) !important;
+  }
+}
+.Tequilas-poducts__name{
+  font-family: 'work_sansmedium';
+  letter-spacing: 1px !important;
+}
+.Tequilas-products__data{
+  p{
+    font-family: 'work_sanslight';
+    margin-bottom: 0 !important;
+    // padding-right: get-vw(200);
+    // background-color: aqua;
+  }
+  span{
+    font-family: 'work_sansmedium';
   }
 }

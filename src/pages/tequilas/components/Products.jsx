@@ -11,7 +11,7 @@ function Products() {
             data-aos="fade-right"
             data-aos-delay={i * 50}
           >
-            <h2 className="PTequilas-poducts__name">
+            <h2 className="Tequilas-poducts__name">
               SPHYNX Tequila® {product.name}
             </h2>
             <p>

@@ -8,7 +8,7 @@
   }
   > .Separator{
     @include from(lg){
-      height: get-vh(276px);//326px
+      height: get-vh(326px) !important;//326px
       // padding-bottom: 30%;
     }
   }
@@ -17,7 +17,7 @@
     &__grid{
       align-items: center;
       @include from(lg){
-        padding-top: get-vw(60px);;
+        // padding-top: get-vw(60px);;
         // margin-top: get-vw(354px);
       }
       @media screen and (max-width: 678px) and (orientation: landscape) {

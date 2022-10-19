@@ -34,7 +34,7 @@
     margin-bottom: 2em;
     @include from(lg){
       margin-bottom: 0;
-      padding-right: get-vw(70px);
+      padding-right: get-vw(10px);
       padding-top: get-vh(50px);
       // background-color: #666;
     }
@@ -52,7 +52,7 @@
       font-size: 20px;
       @include from(lg){
         font-size: get-vh(40px);
-        padding-right: 22vh;
+        padding-right: 10vw;
         line-height: 1.1;
       }
       @media screen and (max-width: 678px) and (orientation: landscape) {
@@ -115,9 +115,9 @@
       padding-left: .5em;
       background-color:transparent;
       border: none;
-      font-size: 20px;
+      font-size: 16px;
       @include from(lg){
-        font-size: get-vh(25px);
+        font-size: get-vh(20px);
         // line-height: get-vh(62px);
       }
       @media screen and (max-width: 678px) and (orientation: landscape) {
@@ -141,6 +141,7 @@
     line-height: 2.5em;
     color: #fff;
     font-weight: 300;
+    letter-spacing: 2px;
     transition: background .3s;
     &:hover{
       background: darken(#666,10);

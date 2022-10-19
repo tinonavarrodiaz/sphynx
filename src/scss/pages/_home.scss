@@ -10,12 +10,15 @@
   flex-direction: column;
   text-align: center;
   height: 180px;
+  font-family: 'abhaya_libresemibold';
   p{
     margin-top: 1em;
     line-height: 1;
     padding: 0 1em;
     @include from(lg){
       margin-top: get-vh(75px);
+      font-size: get-vw(40px) !important;
+      letter-spacing: 3px;
     }
     @include to(400px) {
       font-size: 1em;
@@ -50,13 +53,16 @@
   }
   &__container{
     @include from(lg){
-      height: get-vh(745px);
+      height: get-vh(700px);
 
     }
     @media screen and (max-width: 678px) and (orientation: landscape) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      // grid-template-rows: 20px;
       align-items: center;
+      // max-height: 20px;
+      // overflow: hidden;
     }
   }
   &__text{
@@ -81,8 +87,12 @@
       font-size: 30px;
       margin-bottom: 10%;
       // font-family: 'work_sansmedium';
+
       @include from(lg){
-        font-size: get-vw(65px);
+        font-size: get-vw(58px);
+      }
+      @include from(xl){
+        font-size: get-vw(55px) !important;
       }
       @include to(400px) {
         font-size: 1.5em;
@@ -102,7 +112,7 @@
       font-size: 25px;
       // line-height: 1.2 !important;
       @include from(lg){
-        font-size: get-vw(35px);
+        font-size: get-vw(32px) !important;
       }
       @include to(400px){
         font-size: 1em;
@@ -130,7 +140,7 @@
     @include from(lg) {
       text-align: left;
       padding-left: 0;
-      padding-right: get-vw(170px);
+      padding-right: get-vw(230px);
       padding-top: unset;
       padding-bottom: unset;
     }
@@ -182,9 +192,13 @@
       padding: .5em;
       line-height: 1.2;
       font-size: 18px;
+      letter-spacing: 1px;
+      span{
+        font-family: 'work_sansmedium';
+      }
       @include from(lg){
-        font-size: get-vw(30px);
-        padding-top: get-vw(30px);
+        font-size: get-vw(25px);
+        padding-top: get-vw(25px);
         padding-bottom: 0;
         padding-left: 1em;
         padding-right: 1em;
@@ -201,7 +215,7 @@
 
     }
     .dl{
-      display: grid;
+      // display: grid;
       grid-template-columns: 1fr auto;
     }
   }

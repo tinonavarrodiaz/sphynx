@@ -17,7 +17,7 @@
     padding-left: 1em;
     padding-right: 1em;
     @include from(lg){
-      font-size: get-vh(24px);
+      font-size: get-vh(20px);
     }
     img{
       width: 30%;
@@ -28,6 +28,9 @@
         width: get-vw(165px);
       }
     }
+    // p{
+    //   font-size: get-vw(20px) !important;
+    // }
   }
   &__menu-container{
     display: flex;
@@ -76,6 +79,14 @@
             position: absolute;
             left: 0;
             bottom: -2px;
+          }
+        }
+      }
+      &:last-child{
+        letter-spacing: 2px;
+        li{
+          @include from(lg){
+            margin-right: get-vw(50px);
           }
         }
       }

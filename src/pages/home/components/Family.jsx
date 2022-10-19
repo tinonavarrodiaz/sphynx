@@ -1,4 +1,6 @@
 import products from '../../../helpers/products';
+import parse from 'html-react-parser';
+import { NavLink } from 'react-router-dom';
 
 export default function Family() {
   return (
@@ -29,11 +31,13 @@ export default function Family() {
               data-aos="zoom-in"
               data-aos-delay={i * 100}
             >
-              <img src={`img${prod.img}`} alt={prod.name} />
+              <NavLink to="/tequilas">
+                <img src={`img${prod.img}`} alt={prod.name} />
+              </NavLink>
               <figcaption
                 className={prod.name === 'Añejo Black Oak' ? 'dl' : ''}
               >
-                {prod.nameAlt}
+                {parse(prod.nameAlt)}
               </figcaption>
             </figure>
           ))}

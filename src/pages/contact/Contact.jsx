@@ -1,9 +1,16 @@
-import { useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const Contact = () => {
+  const [send, setSend] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const submit = (e) => {
+    e.preventDefault();
+    // const uri = e.target.action
+    // const method = 'POST'
+  };
   return (
     <section className="Contact">
       <div className="Contact__wrapper">
@@ -15,7 +22,12 @@ const Contact = () => {
           </p>
         </div>
         <div className="Contact__form" data-aos="fade-left">
-          <form action="/php/send.php" method="POST" className="form">
+          <form
+            action="/php/send.php"
+            method="POST"
+            className="form"
+            onSubmit={submit}
+          >
             <div className="input-group">
               <input type="text" name="name" placeholder="Name" id="name" />
             </div>
