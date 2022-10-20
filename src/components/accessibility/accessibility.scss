@@ -1,5 +1,5 @@
 .acceessibility-btn{
-  $size: 45px;
+  $size: 40px;
   position: fixed;
   bottom: 1em;
   left: 1em;
@@ -21,8 +21,8 @@
   }
   > svg{
     fill: #fff;
-    width: 75%;
-    transform: scale(.85);
+    width: $size*.5;
+    // transform: scale(.55);
   }
 }
 
