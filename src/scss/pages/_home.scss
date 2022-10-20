@@ -222,6 +222,26 @@
 }
 
 #video{
-  height: auto;
   width: 100%;
+  height: auto;
+}
+
+.video-cut #video{
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.video-cut{
+  width: 100%;
+
+  max-height: calc(100vh - var(--header-height));
+  position: relative;
+  @include from(lg){
+    height: calc(100vh - var(--header-height));;
+  }
 }

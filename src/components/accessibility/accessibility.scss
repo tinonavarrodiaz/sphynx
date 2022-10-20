@@ -1,9 +1,10 @@
 .acceessibility-btn{
+  $size: 45px;
   position: fixed;
   bottom: 1em;
   left: 1em;
-  width: 40px;
-  height: 40px;
+  width: $size;
+  height: $size;
   border-radius: 50%;
   background: #146ff8;
   display: flex;

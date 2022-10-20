@@ -12,11 +12,24 @@ export default function Video1({ img }) {
   useEffect(() => {
     console.log(isMobile);
     isMobile
-      ? videoEl.current.insertAdjacentHTML('beforebegin', imgElemen)
-      : videoEl.current.insertAdjacentHTML('beforebegin', videoElement);
+      ? videoEl.current.insertAdjacentHTML('afterbegin', imgElemen)
+      : videoEl.current.insertAdjacentHTML('afterbegin', videoElement);
     const video = videoEl.current.querySelector('video')
       ? videoEl.current.querySelector('video').play()
       : null;
+
+    // const headerHeight = getComputedStyle(
+    //   document.documentElement
+    // ).getPropertyValue('--header-height');
+    // document.documentElement.getComputedStyle.getPropertyValue(
+    //   '--header-height'
+    // );
+    const screenHeight = window.innerHeight;
+    const headerHeight = document.querySelector('.main-header').clientHeight;
+    const videoHeight = document.querySelector('video').clientHeight;
+    if (videoHeight >= screenHeight - headerHeight) {
+      videoEl.current.classList.add('video-cut');
+    }
   }, []);
   return (
     <div className="Video" ref={videoEl}>

@@ -10,9 +10,13 @@
   &-products{
     &__wrapper{
       grid-template-columns: 1fr get-vw(487px);
-      margin-bottom:  3em;
+      margin-bottom:  3.5em;
       align-items: center;
       // text-align: center;
+      @include to(lg){
+        display: flex;
+        flex-direction: column;
+      }
       @include from(lg){
         // text-align: left;
         margin-bottom: get-vh(74px);
@@ -25,6 +29,10 @@
     }
     img{
       width: 100%;
+      @include to(lg) {
+        order: 0;
+        margin-bottom: 1.5em !important;
+      }
       @include to(400px) {
         width: 60%;
         margin: 0 auto;
@@ -35,8 +43,12 @@
       }
     }
     &__data{
-      margin-bottom: 1em;
+      margin-bottom: 0em;
       font-size: 20px;
+      @include to(lg) {
+          order: 1;
+          // margin-bottom: ;
+        }
       @include from(lg){
         margin-bottom: 0;
       }
@@ -102,6 +114,7 @@
     }
     p{
       margin-top: .5em;
+      font-size: .7em !important;
     }
     @include from(lg){
       margin-bottom: 0;
