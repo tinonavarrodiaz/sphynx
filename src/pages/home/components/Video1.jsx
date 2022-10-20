@@ -18,16 +18,13 @@ export default function Video1({ img }) {
       ? videoEl.current.querySelector('video').play()
       : null;
 
-    // const headerHeight = getComputedStyle(
-    //   document.documentElement
-    // ).getPropertyValue('--header-height');
-    // document.documentElement.getComputedStyle.getPropertyValue(
-    //   '--header-height'
-    // );
     const screenHeight = window.innerHeight;
     const headerHeight = document.querySelector('.main-header').clientHeight;
-    const videoHeight = document.querySelector('video').clientHeight;
-    if (videoHeight >= screenHeight - headerHeight) {
+    const videoHeight = document.querySelector('video')
+      ? document.querySelector('video').clientHeight
+      : null;
+
+    if (videoHeight && videoHeight >= screenHeight - headerHeight) {
       videoEl.current.classList.add('video-cut');
     }
   }, []);
