@@ -1,0 +1,57 @@
+.modal-age{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(#000,1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container{
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .3rem;
+  }
+  img{
+    width: 60%;
+    margin: 0 auto 2em;
+    @include from(lg){
+      margin: 0 auto get-vw(50px);
+      max-width: get-vw(200px);
+    }
+  }
+  p{
+    margin: 0 auto;
+    margin-bottom: 2rem !important;
+    font-size: .8em !important;
+    text-align: center;
+    line-height: 1.1 !important;
+    @include from(lg){
+      font-size: get-vw(25px) !important;
+      margin: 0 auto get-vw(50px) !important;
+    }
+  }
+  button{
+    background-color: transparent;
+    line-height: 2.5em;
+    padding: 0 2em;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    transition: background .3s;
+    font-size: .8em;
+    @include from(lg){
+      font-size: get-vw(25px) !important;;
+    }
+    &:hover{
+      background-color: #efefef;
+    }
+  }
+}

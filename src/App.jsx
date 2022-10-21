@@ -10,6 +10,30 @@ import Home from './pages/home/Home';
 import Story from './pages/story/Story';
 import Tequilas from './pages/tequilas/Tequilas';
 
+const ageGate = () => {
+  const modalAge = document.createElement('div');
+  console.log(modalAge);
+  modalAge.className = 'modal-age';
+  modalAge.innerHTML = `
+    <div class="modal-age__container">
+      <img src="/img/logo.svg" alt="logo">
+      <p>You must be of legal drinking age according to your country
+of residence to visit this site. By accesing you agree to
+our privacy policy and use of cookies.</p>
+      <button>Enter</button>
+    </div>
+  `;
+  document.body.style = 'overflow: hidden;';
+  document.body.appendChild(modalAge);
+  const btn = modalAge.querySelector('button');
+  btn.addEventListener('click', () => {
+    sessionStorage.setItem('access', true);
+    const video = document.querySelector('video');
+    video ? video.play() : null;
+    document.body.style = 'overflow-Y: auto;';
+    modalAge.remove();
+  });
+};
 function App() {
   // const [count, setCount] = useState(0);
   useEffect(() => {
@@ -21,6 +45,9 @@ function App() {
       useClassNames: true,
       // once: true,
     });
+    const access = sessionStorage.getItem('access');
+    // console.log(access);
+    !access ? ageGate() : null;
   }, []);
 
   return (

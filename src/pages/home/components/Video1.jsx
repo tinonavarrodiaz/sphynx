@@ -5,7 +5,7 @@ export default function Video1({ img }) {
   const videoEl = useRef(null);
   const imgElemen = '<img src="/img/home1.jpg">';
   const videoElement = `
-    <video autoPlay playsInline disablePictureInPicture muted loop id="video">
+    <video playsInline disablePictureInPicture muted loop id="video">
       <source src="/media/Intro_Sphynx-720.mp4" type="video/mp4"/>
     </video>
   `;
@@ -14,9 +14,10 @@ export default function Video1({ img }) {
     isMobile
       ? videoEl.current.insertAdjacentHTML('afterbegin', imgElemen)
       : videoEl.current.insertAdjacentHTML('afterbegin', videoElement);
-    const video = videoEl.current.querySelector('video')
-      ? videoEl.current.querySelector('video').play()
-      : null;
+    const video =
+      videoEl.current.querySelector('video') && sessionStorage.getItem('access')
+        ? videoEl.current.querySelector('video').play()
+        : null;
 
     const screenHeight = window.innerHeight;
     const headerHeight = document.querySelector('.main-header').clientHeight;
