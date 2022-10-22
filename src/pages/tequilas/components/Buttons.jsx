@@ -1,4 +1,5 @@
 import React from 'react';
+import Picture from '../../../components/Picture';
 import { NavLink } from 'react-router-dom';
 
 function Buttons() {
@@ -9,11 +10,13 @@ function Buttons() {
         className={'Buttons__btn'}
         data-aos="fade-right"
       >
-        <img src="/img/tequilas2.jpg" alt="Botella Sphynx" />
+        {/* <img src="/img/tequilas2.jpg" alt="Botella Sphynx" /> */}
+        <Picture img="tequilas2" ext="jpg" alt="Botella Sphynx" />
         <p className="text-btn">Find a location to get SPHYNX®</p>
       </NavLink>
       <NavLink to="/contact" className={'Buttons__btn'} data-aos="fade-left">
-        <img src="/img/tequilas1.jpg" alt="Botella Sphynx" />
+        {/* <img src="/img/tequilas1.jpg" alt="Botella Sphynx" /> */}
+        <Picture img="tequilas1" ext="jpg" alt="Botella Sphynx" />
         <p className="text-btn">Get in touch with us</p>
       </NavLink>
     </section>

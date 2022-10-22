@@ -13,7 +13,7 @@ const Home = () => {
       <Born />
       <Separator />
       <Family />
-      <Banner img="/img/landscape1.jpg" />
+      <Banner img="landscape1" />
     </div>
   );
 };

@@ -1,10 +1,14 @@
 import React from 'react';
+import Picture from '../../../components/Picture';
 
 function Way() {
   return (
     <div className="Way">
       <div className="Way__grid grid grid-col-2">
-        <img src="/img/buy1.jpg" alt="Sphynx Bottle" data-aos="fade-right" />
+        {/* <img src="/img/buy1.jpg" alt="Sphynx Bottle" data-aos="fade-right" /> */}
+        <div data-aos="fade-right">
+          <Picture img="buy1" ext="jpg" alt="Sphynx Bottle" />
+        </div>
         <div className="Way__text" data-aos="fade-left">
           <h2>The authentic way</h2>
           <p>

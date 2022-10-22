@@ -1,4 +1,4 @@
-import blottle from '/img/bottle1.jpg';
+import Picture from '../../../components/Picture';
 
 const Born = () => {
   return (
@@ -11,7 +11,7 @@ const Born = () => {
           </p>
         </div>
         <div className="row" data-aos="fade-left">
-          <img src={blottle} alt="Born" />
+          <Picture img="bottle1" ext="jpg" alt="image 1" />
         </div>
       </div>
     </section>

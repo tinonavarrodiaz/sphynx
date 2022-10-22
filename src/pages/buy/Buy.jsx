@@ -15,7 +15,8 @@ const Buy = () => {
         <Separator />
         <Way />
       </section>
-      <Banner img="img/buy-banner.jpg" />
+      {/* <Banner img="img/buy-banner.jpg" /> */}
+      <Banner img="buy-banner" />
     </>
   );
 };

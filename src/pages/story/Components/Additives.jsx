@@ -1,9 +1,12 @@
+import Picture from '../../../components/Picture';
+
 export default function Additives() {
   return (
     <>
       <div className="Story__grid grid grid-col-2">
         <div className="Story__item" data-aos="fade-right">
-          <img src="/img/about.jpg" alt="Sphynx Story" />
+          {/* <img src="/img/about.jpg" alt="Sphynx Story" /> */}
+          <Picture img="about" ext="jpg" alt="Sphynx Story" />
         </div>
         <div className="Story__item Story__text" data-aos="fade-left">
           <h2>0% Additives. 100% SPHYNX Tequila®</h2>
