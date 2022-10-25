@@ -30,19 +30,20 @@
     }
   }
   p{
-    font-family: 'abhaya_libreregular';
     margin: 0 auto;
     margin-bottom: 2rem !important;
     font-size: .8em !important;
     text-align: center;
-    line-height: 1.1 !important;
+    line-height: 1 !important;
+    // letter-spacing: 0px !important;
     @include from(lg){
-      font-size: get-vw(25px) !important;
+      font-size: get-vw(20px) !important;
       margin: 0 auto get-vw(50px) !important;
+      padding-right: 1em !important;
+      padding-left: 1em !important;
     }
   }
   button{
-    font-family: 'abhaya_libreregular';
     background-color: transparent;
     line-height: 2em;
     padding: 0 2em;
@@ -50,8 +51,10 @@
     text-transform: uppercase;
     transition: background .3s;
     font-size: .8em;
+    color: #000;
+    font-weight: 700;
     @include from(lg){
-      font-size: get-vw(25px) !important;;
+      font-size: get-vw(20px) !important;;
     }
     &:hover{
       background-color: #efefef;
