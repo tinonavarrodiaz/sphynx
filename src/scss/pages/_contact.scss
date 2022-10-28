@@ -146,6 +146,19 @@
     &:hover{
       background: darken(#666,10);
     }
+    &.loading{
+      padding-bottom: .55em;
+      padding-top: .55em;
+      @include from(lg){
+        padding-bottom: 1em;
+        padding-top: 1em;
+
+      }
+    }
+    img{
+      width: 1.5em;
+      margin: 0 auto;
+    }
     @include from(lg){
       line-height: get-vh(88px);
       font-size: get-vw(25px);

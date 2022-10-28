@@ -1,38 +1,45 @@
 import { useState, useEffect, useRef } from 'react';
-import sgMail from '@sendgrid/mail';
+import emailjs from '@emailjs/browser';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+// import sgMail from '@sendgrid/mail';
 
-sgMail.setApiKey(
-  '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'
-);
+// sgMail.setApiKey(
+//   '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'
+// );
 
 const Contact = () => {
-  const [send, setSend] = useState(false);
+  const button = useRef();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const submit = (e) => {
     e.preventDefault();
-    const data = new FormData(e.target);
-    const msg = {
-      to: 'tino.navarro@hotmail.com', // Change to your recipient
-      from: 'tino.navarrod@gmail.com', // Change to your verified sender
-      subject: 'Sending with SendGrid is Fun',
-      text: 'and easy to do anywhere, even with Node.js',
-      html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-    };
+    button.current.innerHTML = '<img src="/img/loading.svg" alt="Loading">';
+    button.current.classList.add('loading');
+    Notify.init({
+      position: 'center-top',
+      timeout: 7000,
+      zindex: 50000,
+      cssAnimationStyle: 'from-top',
+      fontSize: '18px',
+    });
+    emailjs
+      .sendForm(
+        'service_9qnl69w',
+        'template_nv1n494',
+        e.target,
+        'FKpJfQRXAH9qk7_7O'
+      )
+      .then((res) => {
+        button.current.innerHTML = 'SEND IT!';
+        button.current.classList.remove('loading');
 
-    sgMail
-      .send(msg)
-      .then((response) => {
-        console.log(response[0].statusCode);
-        console.log(response[0].headers);
+        Notify.success('Form sent successfully. We will contact you shortly');
       })
-      .catch((error) => {
-        console.error(error);
+      .catch((err) => {
+        Notify.failure('An error occurred. Please try again late');
       });
-    // const uri = e.target.action
-    // const method = 'POST'
   };
   return (
     <section className="Contact">
@@ -52,15 +59,22 @@ const Contact = () => {
             onSubmit={submit}
           >
             <div className="input-group">
-              <input type="text" name="name" placeholder="Name" id="name" />
+              <input
+                type="text"
+                name="from_name"
+                placeholder="Name"
+                id="name"
+              />
             </div>
             <div className="input-group">
-              <input type="email" name="email" placeholder="Email address" />
+              <input type="email" name="mail" placeholder="Email address" />
             </div>
             <div className="input-group textarea-group">
-              <textarea name="msg" id="" placeholder="Message"></textarea>
+              <textarea name="message" id="" placeholder="Message"></textarea>
             </div>
-            <button type="submit">Send It!</button>
+            <button ref={button} type="submit">
+              Send It!
+            </button>
           </form>
         </div>
       </div>
