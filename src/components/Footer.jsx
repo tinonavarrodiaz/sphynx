@@ -16,41 +16,41 @@ const Footer = () => {
             </NavLink>
           </li> */}
           <li className="policy-menu__item">
-            <a
-              className={'policy-menu__link'}
-              target="_blank"
-              href={
-                'https://www.ueni.com/en-gb/privacy?_ga=2.236453377.1850822409.1666112312-1947257052.1665520950'
-              }
-            >
+            <NavLink className={'policy-menu__link'} to={'/privacy-policy'}>
               Privacy Policy
-            </a>
+            </NavLink>
           </li>
           <li className="policy-menu__item">
-            <a
-              className={'policy-menu__link'}
-              target="_blank"
-              href={
-                'https://www.ueni.com/en-gb/privacy?_ga=2.236453377.1850822409.1666112312-1947257052.1665520950'
-              }
-            >
+            <NavLink className={'policy-menu__link'} to={'/cookie-policy'}>
               Cookie Policy
-            </a>
+            </NavLink>
           </li>
         </ul>
         <ul className="social-menu">
           <li className="social-menu__item">
-            <a href="#" className="social-menu__link">
-              FACEBOOK
+            <a
+              href="https://twitter.com/sphynxtequila"
+              className="social-menu__link"
+              target={'_blank'}
+            >
+              TWITTER
             </a>
           </li>
           <li className="social-menu__item">
-            <a href="#" className="social-menu__link">
+            <a
+              href="https://www.instagram.com/sphynxtequila/"
+              className="social-menu__link"
+              target={'_blank'}
+            >
               INSTAGRAM
             </a>
           </li>
           <li className="social-menu__item">
-            <a href="#" className="social-menu__link">
+            <a
+              href="https://www.tiktok.com/@sphynxtequila"
+              target={'_blank'}
+              className="social-menu__link"
+            >
               TIK-TOK
             </a>
           </li>

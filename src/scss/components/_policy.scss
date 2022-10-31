@@ -1,0 +1,36 @@
+.policy{
+  width: 90%;
+  margin: 0 auto;
+  padding: 4em 0;
+  h1{
+    text-align: center;
+
+  }
+  h2{
+    font-size: 220%;
+  }
+  p{
+    margin-bottom: 1em;
+  }
+  @include from(lg) {
+    padding: get-vh(100px) 0;
+  }
+  ul{
+    list-style-type: disc;
+    margin-left: 1em;
+    font-size: 1.2em;
+    line-height: 1.2;
+
+    @include from(lg) {
+      text-align: left;
+      font-size: get-vw(30px);
+      line-height: get-vw(41px);
+      margin-bottom: get-vh(60px);
+    }
+    li{
+      line-height: 1.2;
+      margin-bottom: 1em;
+      letter-spacing: 2px;
+    }
+  }
+}

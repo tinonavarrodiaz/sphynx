@@ -26,10 +26,10 @@ const Contact = () => {
     });
     emailjs
       .sendForm(
-        'service_9qnl69w',
-        'template_nv1n494',
+        'service_48nr9jb',
+        'template_6y7j58t',
         e.target,
-        'FKpJfQRXAH9qk7_7O'
+        'AO4fubuwS2DBZm4u_'
       )
       .then((res) => {
         button.current.innerHTML = 'SEND IT!';

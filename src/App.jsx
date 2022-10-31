@@ -9,6 +9,8 @@ import Contact from './pages/contact/Contact';
 import Home from './pages/home/Home';
 import Story from './pages/story/Story';
 import Tequilas from './pages/tequilas/Tequilas';
+import Privacy from './pages/Privacy';
+import Cookie from './pages/Cookie';
 
 const ageGate = () => {
   const modalAge = document.createElement('div');
@@ -60,6 +62,8 @@ function App() {
           <Route path="/tequilas" element={<Tequilas />} />
           <Route path="/where-to-buy" element={<Buy />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="/cookie-policy" element={<Cookie />} />
         </Routes>
       </main>
       <Footer />

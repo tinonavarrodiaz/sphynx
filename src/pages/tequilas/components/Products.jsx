@@ -33,14 +33,6 @@ function Products() {
           </div>
         </div>
       ))}
-      <div className="link-ext">
-        <a
-          href="https://issuu.com/somosdec/docs/bookissuufilefinal"
-          target="_blank"
-        >
-          Click here to view detailed information in our catalog/book.
-        </a>
-      </div>
     </div>
   );
 }
