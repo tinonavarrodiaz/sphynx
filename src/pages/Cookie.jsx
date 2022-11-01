@@ -1,6 +1,9 @@
-import React from 'react';
+import { useEffect } from 'react';
 
 function Cookie() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="policy">
       <h1>COOKIES POLICY</h1>

@@ -1,4 +1,9 @@
+import { useEffect } from 'react';
+
 const Privacy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="policy">
       <h1>PRIVACY POLICY</h1>
