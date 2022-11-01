@@ -15,8 +15,8 @@ function Cookie() {
         device when you visit a website or access or use a mobile application
         and which store and sometimes track information about your use of the
         SPHYNX Tequila. A number of cookies we use last only for the duration of
-        your session and expire when you close your browser or exit the UENI
-        Platform. Other cookies are used to remember you when you return to the
+        your session and expire when you close your browser or exit the SPHYNX
+        Tequila. Other cookies are used to remember you when you return to the
         SPHYNX Tequila and will last for longer. We use cookies to:
       </p>
       <ul className="info-list">
@@ -27,8 +27,8 @@ function Cookie() {
           pages of the SPHYNX Tequila;
         </li>
         <li>
-          collect anonymous statistical information about how you use the UENI
-          Platform including how long you spend on the SPHYNX Tequila and where
+          collect anonymous statistical information about how you use the SPHYNX
+          Tequila including how long you spend on the SPHYNX Tequila and where
           you have come to the SPHYNX Tequila from, so that we can improve the
           SPHYNX Tequila and learn which parts of the SPHYNX Tequila are most
           popular with users; and
@@ -59,8 +59,8 @@ function Cookie() {
         In addition to cookies, tracking Gifs may be set by us or third parties
         in respect of your use of the SPHYNX Tequila. Tracking Gifs are small
         image files within the content of the SPHYNX Tequila or the body of our
-        newsletters so we or third parties can understand parts of the UENI
-        Platform are used and whether particular content is of interest.
+        newsletters so we or third parties can understand parts of the SPHYNX
+        Tequila are used and whether particular content is of interest.
       </p>
     </section>
   );
