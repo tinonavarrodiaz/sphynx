@@ -16,6 +16,10 @@ const menu = [
     link: '/where-to-buy',
   },
   {
+    title: 'catalogue',
+    link: '/catalogue',
+  },
+  {
     title: 'contact',
     link: '/contact',
   },

@@ -1,0 +1,36 @@
+.Catalogue{
+  img{
+    margin: 0 auto 50px;
+    width: 70%;
+    max-width: 400px;
+    @include from(lg){
+      margin-bottom: get-vh(100px);
+    }
+  }
+  .showPDF, .link-container{
+    display: block;
+    width: 80%;
+    // max-width: auto;
+    height: 40vh;
+    margin: 0 auto;
+    @include from(lg){
+      width: 700px;
+      height: 680px;
+    }
+  }
+  .link-container{
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    a{
+      text-decoration: underline;
+    }
+  }
+  // a{
+  //   display: inline-block;
+  //   margin: 30px auto 0;
+  //   text-align: center;
+  //   background-color: aqua;
+  // }
+}
