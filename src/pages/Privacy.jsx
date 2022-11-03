@@ -1,4 +1,9 @@
+import { useEffect } from 'react';
+
 const Privacy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="policy">
       <h1>PRIVACY POLICY</h1>
@@ -25,11 +30,6 @@ const Privacy = () => {
         your legal rights, such as requests to delete your data, please contact
         the DPO at elcontacto@sphynxtequila.com.
       </p>
-      <p>Our postal contact details are:</p>
-      <ul>
-        <li>SPHYNX Tequila </li>
-        <li>Montgomery Avenue Leeds LS16 5RW</li>
-      </ul>
       <p>
         You have the right to make a complaint at any time to the Information
         Commissioner’s Office (ICO), the UK supervisory authority for data

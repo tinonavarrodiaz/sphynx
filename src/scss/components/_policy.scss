@@ -4,10 +4,18 @@
   padding: 4em 0;
   h1{
     text-align: center;
+    line-height: 1 !important;
+    font-size: 22px !important;
 
+      @include from(lg) {
+        font-size: get-vw(70px) !important;
+      }
   }
   h2{
-    font-size: 220%;
+    font-size: 20px !important;
+    @include from(lg) {
+      font-size: get-vw(45px) !important;
+    }
   }
   p{
     margin-bottom: 1em;
