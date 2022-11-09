@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
+    "@ksedline/turnjs": "^0.1.0",
     "@sendgrid/mail": "^7.7.0",
     "antd": "^4.23.6",
     "aos": "^2.3.4",
@@ -19,11 +20,15 @@
     "hamburgers": "^1.2.1",
     "html-react-parser": "^3.0.4",
     "izitoast": "^1.4.0",
+    "jquery": "^3.6.1",
     "notiflix": "^3.2.5",
     "react": "^18.2.0",
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.2"
+    "react-flip-page": "^1.6.4",
+    "react-pageflip": "^2.0.3",
+    "react-router-dom": "^6.4.2",
+    "turn-js": "^0.5.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.21",

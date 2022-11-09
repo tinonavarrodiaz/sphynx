@@ -11,7 +11,7 @@ import Story from './pages/story/Story';
 import Tequilas from './pages/tequilas/Tequilas';
 import Privacy from './pages/Privacy';
 import Cookie from './pages/Cookie';
-import Catalogue from './pages/Catalogue';
+import Catalogue from './pages/Catalogue2';
 
 const ageGate = () => {
   const modalAge = document.createElement('div');

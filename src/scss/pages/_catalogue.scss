@@ -1,5 +1,5 @@
 .Catalogue{
-  img{
+  &__logo{
     margin: 0 auto 50px;
     width: 70%;
     max-width: 400px;
@@ -7,30 +7,67 @@
       margin-bottom: get-vh(100px);
     }
   }
-  .showPDF, .link-container{
+
+}
+// .stf__parent{
+//   // max-width: 1200px !important;
+//   // width: 90% !important;
+//   // transform: scale(1.1) translateY(5%);
+//   background-color: #fff;
+//   margin: 0 auto;
+//   @include from(lg){
+//     max-width: 1500px !important;
+//     background-color: lime;
+//   //   max-height: unset !important;
+//   //   width: 90% !important;
+//   //   max-width: unset !important;
+//   }
+// }
+.demo-book{
+  cursor: pointer;
+  margin: 0 auto;
+}
+.buttonsBook{
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1em;
+  margin-left: .25em;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  // display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  // background-color: aqua;
+  @include from(lg){
+    grid-template-columns: repeat(4,1fr);
+    margin-top: get-vw(50px);
+  }
+  button, .ext-link{
     display: block;
-    width: 80%;
-    // max-width: auto;
-    height: 40vh;
-    margin: 0 auto;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 1.1;
+    font-size: 14px;
+    // padding-left: 1em ;
+    // padding-right: 1em;
+    background-color: #666;
+    text-align: center;
+    color: #fff;
+    &:last-child{
+      margin-right: 0;
+    }
     @include from(lg){
-      width: 700px;
-      height: 680px;
+      font-size: get-vw(18px);
+      line-height: 2.5em;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 1.5em;
+        padding-right: 1.5em;
     }
   }
-  .link-container{
-    height: auto;
-    margin-top: 30px;
-    display: flex;
-    justify-content: flex-end;
-    a{
-      text-decoration: underline;
-    }
-  }
-  // a{
-  //   display: inline-block;
-  //   margin: 30px auto 0;
-  //   text-align: center;
-  //   background-color: aqua;
-  // }
 }
