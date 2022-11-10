@@ -14,8 +14,8 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: 'php/**.*',
-          dest: 'php',
+          src: '_redirects',
+          dest: '',
         },
       ],
     }),
