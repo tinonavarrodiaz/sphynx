@@ -7,12 +7,13 @@
       margin-bottom: get-vh(0px);
     }
     @media screen and (min-width:1400px) {
-      margin-bottom: get-vh(100px);
+      margin-bottom: get-vh(50px);
 
     }
   }
   @media screen and (min-width:1024px) {
     padding-bottom: get-vw(30px) !important;
+    padding-top: get-vh(100px) !important;
   }
   @media screen and (min-width:1400px) {
     padding-bottom: get-vw(100px) !important;

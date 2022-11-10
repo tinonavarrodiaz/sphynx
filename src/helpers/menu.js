@@ -15,10 +15,10 @@ const menu = [
     title: 'where to buy',
     link: '/where-to-buy',
   },
-  {
-    title: 'catalogue',
-    link: '/catalogue',
-  },
+  // {
+  //   title: 'catalogue',
+  //   link: '/catalogue',
+  // },
   {
     title: 'contact',
     link: '/contact',
