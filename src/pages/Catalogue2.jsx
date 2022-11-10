@@ -95,7 +95,7 @@ export default function Catalogue() {
           <button type="button" onClick={first}>
             First Page
           </button>
-          <a className="ext-link" href="download:/media/DigitalFile.pdf">
+          <a className="ext-link" href="/media/DigitalFile.pdf" download>
             Download PDF
           </a>
         </div>
