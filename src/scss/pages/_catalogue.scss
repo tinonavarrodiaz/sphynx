@@ -4,10 +4,10 @@
     width: 70%;
     max-width: 400px;
     @include from(lg){
-      margin-bottom: get-vh(0px);
+      margin-bottom: get-vh(30px);
     }
     @media screen and (min-width:1400px) {
-      margin-bottom: get-vh(50px);
+      margin-bottom: get-vh(100px);
 
     }
   }
