@@ -5,7 +5,7 @@
     width: 70%;
     max-width: 400px;
     @include from(lg){
-      margin-bottom: get-vh(30px);
+      margin-bottom: get-vh(0px);
     }
     @media screen and (min-width:1400px) {
       margin-bottom: get-vh(70px);
@@ -13,7 +13,7 @@
     }
   }
   @media screen and (min-width:1024px) {
-    padding-bottom: get-vw(30px) !important;
+    padding-bottom: get-vw(0px) !important;
     padding-top: get-vh(100px) !important;
   }
   @media screen and (min-width:1400px) {
@@ -40,11 +40,11 @@
   margin: 0 auto;
   @media screen and (min-width:1024px) {
     transform-origin: center;
-    transform: scale(.7);
+    transform: scale(.75) translateY(-5%) !important;
   }
-  @media screen and (min-width:1400px) {
+  @media screen and (min-width:1600px) {
     transform-origin: center;
-    transform: scale(.9);
+    transform: scale(.9) !important;
   }
 }
 
@@ -65,7 +65,7 @@
   align-items: center;
   // background-color: aqua;
   @include from(lg){
-    transform: translateY(-200%);
+    transform: translateY(-300%);
     grid-template-columns: repeat(4,1fr);
     margin-top: get-vw(50px);
   }

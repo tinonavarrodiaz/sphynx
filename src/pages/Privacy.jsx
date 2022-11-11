@@ -69,28 +69,9 @@ const Privacy = () => {
         </li>
         <li>
           {' '}
-          in connection with an account sign-in facility, your log-in and
-          password details;
-        </li>
-        <li>
-          {' '}
-          If you decide to register through or otherwise grant access to us via
-          a third-party social networking site such as Facebook Connect or
-          Google, we may also collect personal information that is already
-          associated with such site;
-        </li>
-        <li>
-          {' '}
           the content of any communications you send to us, for example, to
           report a problem or to submit queries, concerns or comments regarding
           the SPHYNX Tequila or its content;
-        </li>
-        <li> any search terms you looked up and results that you selected;</li>
-        <li>
-          {' '}
-          friend or contact lists that you may provide to us by connecting your
-          UENI account with your computer, mobile device, or third-party social
-          network accounts;
         </li>
         <li>
           {' '}
