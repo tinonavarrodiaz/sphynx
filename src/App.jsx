@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Accessibility from './components/accessibility/Accessibility';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -66,6 +66,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/cookie-policy" element={<Cookie />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>
       <Footer />
